@@ -1,53 +1,109 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .steps-app {
-    width: 400px;
     padding: 20px;
+    font-size: 1.2rem;
 }
 
 .steps-form {
     display: flex;
 }
 
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+label {
+    
+}
+
+.form__item:last-of-type {
+    justify-content: end;
+}
+
+
+.steps-form > :last-child {
+    margin-right: 0;
+}
+
+.form__label {
+    margin-bottom: 15px;
+}
+
 .form-button {
-    border: 0.5px solid rgb(63, 63, 63);
+    padding: 15px 30px;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: white;
-    color: rgb(63, 63, 63);
+    background-color: #FFF;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 5px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.table {
+    margin-top: 20px;
 }
 
 .list {
-    border: 0.5px solid rgb(63, 63, 63);
+    border: 1px solid rgb(63, 63, 63);
     border-radius: 10px;
     padding: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
 }
 
-.date {
-    border: 0.5px solid rgb(63, 63, 63);
-    border-radius: 5px;
-    appearance: none;
-    margin-right: 15px;
+.list > * {
+    margin-bottom: 15px;
 }
 
-.distance {
-    border: 0.5px solid rgb(63, 63, 63);
-    border-radius: 5px;
-    appearance: none;
-    margin-right: 15px;
+.list > :last-child {
+    margin-bottom: 0;
 }
+
 
 .titles {
     display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
 .title {
     width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .steps-row {
     display: flex;
+    justify-content: space-between;
 }
 
 .step_number {
     width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .step_date {
@@ -56,4 +112,6 @@
 
 .icons {
     width: 30%;
+    display: flex;
+    justify-content: end;
 }

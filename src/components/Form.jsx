@@ -47,15 +47,15 @@ function Form(props) {
     return (
         <form className="steps-form" onSubmit={handleSubmit}>
             <div className="form__item">
-                <label htmlFor="date" className="form__label">Дата (ДД.ММ.ГГ)</label>
-                <input type='date' placeholder="Введите дату" value={dateInput} min='1899-01-01' name='date' className="date" onChange={handleDateChange} required></input>
+                <label htmlFor="date" className="form__label"><span>Дата (ДД.ММ.ГГ)</span></label>
+                <input type='date' value={dateInput} min='1899-01-01' name='date' className="date" onChange={handleDateChange} required></input>
             </div>
             <div className="form__item">
                 <label htmlFor="distance" className="form__label">Пройдено км</label>
-                <input type='number' placeholder="Введите километры" value={distanceInput} name='kilometers' className="distance" onChange={handleChange} required></input>
+                <input type='number' value={distanceInput} name='kilometers' className="distance" onChange={handleChange} required></input>
             </div>
             <div className="form__item">
-                <button className="form-button">Ok</button>
+                <button className="form-button">OK</button>
             </div>
         </form>
     )

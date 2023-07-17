@@ -61,9 +61,9 @@ function List() {
             <Form onSubmit={addStep} />
             <div className="table">
                 <div className="titles">
-                    <div className="title">Дата (ДД. ММ. ГГ.)</div>
-                    <div className="title">Пройдено км</div>
-                    <div className="title">Действия</div>
+                    <div className="title"><span>Дата (ДД.ММ.ГГ)</span></div>
+                    <div className="title"><span>Пройдено км</span></div>
+                    <div className="title"><span>Действия</span></div>
                 </div>
                 <div className="list">
                     <Step

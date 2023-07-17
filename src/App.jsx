@@ -5,8 +5,10 @@ function App() {
   
 
   return (
-    <div className='steps-app'>
-      <List/>
+    <div className="wrapper">
+      <div className="steps-app">
+        <List/>
+      </div>
     </div>
   )
 }
